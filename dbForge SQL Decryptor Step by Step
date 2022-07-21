@@ -1,0 +1,20 @@
+Vendor:  devart
+Product:  dbForge SQL Decryptor 
+
+Step-by-Step Instructions:
+	1. Install and launch dbForge SQL Decryptor from your vm.
+	2. Specify the Server name:  where the encrypted SQL Object exist and hit Connect.
+	3. Next to the SQL instance name expand by clicking the '>'.
+	4. Next to the Databases expand by clicking the '>'.
+	5. Next to the specific database name of choice expand by clicking the '>'.
+	6. Next to the object type expand by clicking the '>'.
+	7. For viewing/showing a specific decrypted object on the screen only, right click on the object and select Show DDL script. 
+	8. For decrypting a specific object in place, right click on the object and select Decrypt in-place.
+	9. For decrypting objects in place or writing them to a specified file, right click on the object or object type (example: Procedures) and select Decryption Wizard.  Note: decrypting a full list of objects is slow unless you use DAC mode. 
+		a. Select Output type:  <Single file, file per object, decrypt in place>.
+		b. Create folders for file path and specify complete filename in the File path: <filename>.
+		c. Specify:  tvf_ to select the table-valued functions or udf_ to select the user-defined functions.  
+		d. Unhighlight all object types in the Show objects: except the object type of choice such as Stored Procedures.  
+		e. Click on 'Object' to sort the list prior to actually executing the list.  Note:  stored decrypted functions will have an fx versus stored encrypted functions will have an fx with a small up arrow.
+		f. Select Execute on the bottom right of the screen.
+		g. Edit the scripts in the specified file, and change 'Create' to 'Alter' if desired.
